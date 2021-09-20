@@ -35,3 +35,20 @@ We take a **snapshot**, a copy of the state of the database. We throw away all t
 - We want to avoid inconsistancy (update 1 information = update a lot of lines if the DB is not normalized)
 - We want to avoid some data to exist
 
+### Revisiting Relational Database
+Passer en gros d'un modèle conceptuel à un modèle relationnel puis à une implémentation en SQL. On réfléchit aux dépendances entre les parties prenantes, les relations et interactions entre elles.
+1. Conceptual model : we try to design which information should be stored. No link with computer science ! We should be able to talk about it to Charlotte.
+   - We derive an ER Diagram, which is still free of any notions of computer science !
+   - This is pure conceptual model, we communicate with the clients through this !
+   - Then we begin to think of the technology
+2. Relational Model (not the only technology possible ! Object oriented database, document storage, ...)
+
+    - Suppose we decided a relational model
+    - We also have a lot of DB that we can choose
+3. Once we have chosen our technology, we can finally deploy it IRL
+
+    - See the size of the pages, etc.
+    - The physical database is optimized for our purposes
+
+
+We MUST be product agnostic, technology agnostic, in this course.
